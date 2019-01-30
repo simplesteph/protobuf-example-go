@@ -114,7 +114,7 @@ func readFromFile(fname string, pb proto.Message) error {
 
 	err2 := proto.Unmarshal(in, pb)
 	if err2 != nil {
-		log.Fatalln("Couldn't put the bytes into the protocol buffers struct", err)
+		log.Fatalln("Couldn't put the bytes into the protocol buffers struct", err2)
 		return err2
 	}
 
